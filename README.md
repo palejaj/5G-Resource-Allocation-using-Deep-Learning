@@ -1,3 +1,6 @@
+
+---
+
 # 5G Resource Allocation Using Deep Learning
 
 ## Project Overview
@@ -17,7 +20,7 @@ This project aims to **optimally schedule resources in a 5G network** using an e
    - Splits the data into training and testing sets.
    - Saves preprocessed test data (`X-test.npy`, `y-test.npy`) for analysis.
    - Trains the Feedforward Neural Network (FFN) on the data.
-   - Saves the trained model as `5g_resource_scheduling_model.h5` for inference.
+   - Saves the trained model as `5g_resource_scheduling_model.keras` for inference.
 
 2. **Plot Script (`plot.py`)**:
    - Uses preprocessed test data (`X-test.npy`, `y-test.npy`) to generate visualizations.
@@ -55,7 +58,7 @@ Run the `model_trainer.py` script to preprocess the data and train the FFN:
 python src/model_trainer.py
 ```
 Outputs:
-- Trained model: `5g_resource_scheduling_model.h5`.
+- Trained model: `5g_resource_scheduling_model.keras`.
 - Preprocessed test data: `X-test.npy`, `y-test.npy`.
 
 ### 2. Generate Visualizations
@@ -79,7 +82,7 @@ Outputs:
    - `X-test.npy`: Test input features.
    - `y-test.npy`: Test output labels.
 2. **Trained Model**:
-   - `5g_resource_scheduling_model.h5`: Neural network model for inference.
+   - `5g_resource_scheduling_model.keras`: Neural network model for inference.
 3. **Prediction Results**:
    - `real_time_predictions_parallel.csv`: Contains input attributes and corresponding predicted outputs.
 
@@ -118,5 +121,3 @@ This project is open for contributions. Feel free to fork the repository and sub
 This project is licensed under the MIT License. Feel free to use, modify, and distribute it as per the license terms.
 
 ---
-
-
